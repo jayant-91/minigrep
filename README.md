@@ -1,7 +1,15 @@
 minigrep
 --------
-ripgrep is a line-oriented search tool that recursively searches the current
-directory for a regex pattern.
+
+minigrep is a basic command-line grep tool.
+
+Usage
+-----
+    cargo run -- <query> <file_path>
+
+Example
+-------
+    cargo run -- to poem.txt
 
 License
 -------
