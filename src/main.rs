@@ -39,9 +39,7 @@ pub struct Config {
 }
 
 impl Config {
-    pub fn build<T: Iterator<Item = String>>(
-        mut args: T
-    ) -> Result<Config, &'static str> {
+    pub fn build<T: Iterator<Item = String>>(mut args: T) -> Result<Config, &'static str> {
         args.next();
 
         let query = match args.next() {
